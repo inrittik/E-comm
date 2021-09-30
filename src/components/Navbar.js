@@ -15,11 +15,11 @@ export default function Navbar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+                <li className="nav-item" style={{minWidth: 50}}>
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown" style={{minWidth: 50}}>
                     <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Shop By Categories
                     </a>
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <button className="btn btn-outline-light" type="submit"><Search fontSize="medium" style={{fill: "#1489EB"}}/></button>
             </form>
             <ul className="navbar-nav me-right mb-0 mb-lg-0 ">
-                <li className="nav-item">
+                <li className="nav-item" style={{minWidth: 50}}>
                     <a className="nav-link" href="/"><Profile fontSize="large"/>Sign In</a>
                 </li>
             </ul>

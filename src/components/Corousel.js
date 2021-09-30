@@ -3,7 +3,7 @@ import React from 'react'
 export default function Corousel() {      
     return (        
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner" style={{maxHeight: 400}}>
+        <div className="carousel-inner" style={{maxHeight: " 50vh"}}>
             <div className="carousel-item active">
             <img src="https://m.media-amazon.com/images/I/71SDTPswjNL._SX3000_.jpg" className="d-block w-100" alt="image1"/>
             </div>
