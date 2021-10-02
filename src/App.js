@@ -1,4 +1,4 @@
-
+import './App.css'
 import Corousel from './components/Corousel';
 import NavBarOffCanvas from './components/NavBarOffCanvas';
 import Card from './components/Card';
@@ -12,10 +12,10 @@ function App() {
     <div className="container mt-1" style={{maxWidth: "90vw"}}>
       <Corousel/>
     </div>
-    <div className="carSection d-flex mt-5 mb-5" style={{justifyContent: "space-around"}}>
-      <Card/>
-      <Card/>
-      <Card/>
+    <div className="cardSection" style={{justifyContent: "space-around"}}>
+      <Card title="Trending | Hot Picks"/>
+      <Card title="Your recent purchases"/>
+      <Card title="Recently viewed"/>
     </div>
     </>
   );

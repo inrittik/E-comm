@@ -13,7 +13,7 @@ export default function Navbar() {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="collapse navbar-collapse">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item" style={{minWidth: 50}}>
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
@@ -32,20 +32,22 @@ export default function Navbar() {
                         <li><a className="dropdown-item" href="/">Other Categories</a></li>
                     </ul>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link-active" href="/"><Cart fontSize="large" style={{fill: "#65A0F6"}}/></a>
-                </li>
             </ul>
+            
+            </div>
             <form className="d-flex w-50 me-auto">
                 <input className="form-control me-2" type="search" placeholder="Search Items" aria-label="Search"/>
                 <button className="btn btn-outline-light" type="submit"><Search fontSize="medium" style={{fill: "#1489EB"}}/></button>
             </form>
-            <ul className="navbar-nav me-right mb-0 mb-lg-0 ">
-                <li className="nav-item" style={{minWidth: 50}}>
-                    <a className="nav-link" href="/"><Profile fontSize="large"/>Sign In</a>
-                </li>
-            </ul>
-            
+            <div className="collapse navbar-collapse">
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item" style={{minWidth: 50}}>
+                        <a className="nav-link" href="/"><Profile fontSize="large"/>Sign In</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link-active" href="/"><Cart fontSize="large" style={{fill: "#65A0F6"}}/></a>
+                    </li>
+                </ul>
             </div>
             </div>
         </nav>
