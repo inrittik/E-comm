@@ -39,7 +39,7 @@ export default function NavBarOffCanvas() {
                     <a className="nav-link" href="/"><Cart fontSize="large" style={{fill: "#65A0F6"}}/></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/"><Profile fontSize="large"/>Sign In</a>
+                    <a className="nav-link" href="./components/SignInPage/index.html"><Profile fontSize="large"/>Sign In</a>
                 </li>
                 </ul>
                 
