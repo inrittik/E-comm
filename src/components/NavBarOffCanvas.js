@@ -4,7 +4,7 @@ import Search from '@material-ui/icons/Search'
 import Cart from '@material-ui/icons/ShoppingCart'
 import Profile from '@material-ui/icons/AccountCircle'
 import DehazeIcon from '@material-ui/icons/DehazeOutlined'
-
+import { Link } from "react-router-dom"; 
 export default function NavBarOffCanvas() {
     return (
     <div>
@@ -39,7 +39,7 @@ export default function NavBarOffCanvas() {
                     <a className="nav-link" href="/"><Cart fontSize="large" style={{fill: "#65A0F6"}}/></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/"><Profile fontSize="large"/>Sign In</a>
+                    <Link className="nav-link" to="/signIn"><Profile fontSize="large"/>Sign In</Link>
                 </li>
                 </ul>
                 
