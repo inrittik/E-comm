@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import LocalMall from '@material-ui/icons/LocalMall'
 import Search from '@material-ui/icons/Search'
 import Cart from '@material-ui/icons/ShoppingCart'
@@ -39,7 +39,7 @@ export default function NavBarOffCanvas() {
                     <a className="nav-link" href="/"><Cart fontSize="large" style={{fill: "#65A0F6"}}/></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="./components/SignInPage/index.html"><Profile fontSize="large"/>Sign In</a>
+                    <a className="nav-link" href="/"><Profile fontSize="large"/>Sign In</a>
                 </li>
                 </ul>
                 
