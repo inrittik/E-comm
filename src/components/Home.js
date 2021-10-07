@@ -1,6 +1,7 @@
 import React from 'react'
-import Corousel from './Corousel';
-import Card from './Card'
+import Corousel from './Carousel/Carousel';
+import Card from './Card/Card'
+import cardData from './Card/CardDetails';
 export default function Home() {
     return (
         <>
@@ -8,9 +9,12 @@ export default function Home() {
           <Corousel/>
         </div>
         <div className="cardSection" style={{justifyContent: "space-around"}}>
-          <Card title="Trending | Hot Picks"/>
-          <Card title="Your recent purchases"/>
-          <Card title="Recently viewed"/>
+          {
+            cardData.cards.map((card)=>(
+              <Card title={card.heading} description={card.description}/>
+            )
+            )
+          }
         </div>
         </>
     )

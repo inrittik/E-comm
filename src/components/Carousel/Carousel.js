@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Corousel() {      
+export default function Carousel() {      
     return (        
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner" style={{maxHeight: "50vh"}}>
