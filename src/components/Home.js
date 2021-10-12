@@ -11,7 +11,7 @@ export default function Home() {
       <div className="container mt-1" style={{maxWidth: "90vw"}}>
       <Corousel/>
     </div>
-    <div className="cardSection" style={{justifyContent: "space-around"}}>
+    <div className="cardSection">
       {
         cardData.cards.map((card)=>(
           <Card title={card.heading} description={card.description}/>
