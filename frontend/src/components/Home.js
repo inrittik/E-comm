@@ -2,9 +2,9 @@ import React from 'react';
 import Corousel from './Carousel/Carousel';
 import Card from './Card/Card';
 import cardData from './Card/CardDetails';
-// import ProductCard from './products/productCard';
-// import productDetails from './products/productsDetails';
-
+import ProductCard from './products/productCard';
+import productDetails from './products/productsDetails';
+import Footer from './Footer';
 // const container = {
 //   justifyContent: 'space-around',
 //   flexWrap: 'wrap'
@@ -23,14 +23,17 @@ export default function Home() {
             )
           }
         </div>
-        {/* <div className="productSection mt-3 d-flex flex-wrap" style={{container}}>
+        <div className="cardSection" style={{justifyContent: "space-around"}}>
           {
             productDetails.products.map((product)=>(
               <ProductCard title={product.prodName} description={product.brand} image={product.image}/>
             )
             )
           }    
-        </div> */}
+        </div>
+        <div>
+            <Footer/>
+        </div>
         </>
   )
 }

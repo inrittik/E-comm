@@ -11,7 +11,11 @@ const data = {
         {
             heading: 'Your Orders',
             description: 'View your past orders',
-        }
+        },
+        // {
+        //     heading: 'Your Orders',
+        //     description: 'View your past orders',
+        // }
     ]
 }
 
