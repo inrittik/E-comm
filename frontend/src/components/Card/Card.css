@@ -1,0 +1,11 @@
+.cardBorder{
+    border-radius : 15px;
+    box-shadow: 10px 8px 8px #888888;
+    width: 100%;
+    text-align:center;
+    margin: 10px 0;
+    transition: transform 0.2s;
+}
+.cardBorder:hover{
+    transform: scale(1.08, 1.08);
+}
