@@ -1,0 +1,16 @@
+import Express from "express";
+import productDetails from './productsDetails.js';
+const app = Express();
+
+app.get('/api/products', (req, res)=>{
+    res.send(productDetails.products);
+});
+
+app.get('/', (req, res)=>{
+    res.send("Server is ready");
+});
+
+const port = process.env.PORT || 5000;
+app.listen(port, ()=>{
+    console.log(`Serve at http://localhost:${port}`);
+});
