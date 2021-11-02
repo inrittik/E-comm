@@ -41,12 +41,11 @@ function NavBarOffCanvas() {
         
 
 
-        <Link to='/checkout'>
+        <Link to='/CartPage'>
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
-          
           </div>
-          </Link>
+        </Link>
         
       </div>
     </div>

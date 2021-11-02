@@ -24,7 +24,7 @@ export default function Home() {
     <div className="cardSection" style={{justifyContent: "space-around"}}>
       {
         cardData.cards.map((card)=>(
-          <Card title={card.heading} description={card.description}/>
+          <Card key={card._id} title={card.heading} description={card.description}/>
         )
         )
       }
@@ -32,7 +32,7 @@ export default function Home() {
     <div className="cardSection" style={{justifyContent: "space-around"}}>
       {
         products.map((product)=>(
-          <ProductCard title={product.prodName} price={product.price} description={product.brand} image={product.image}/>
+          <ProductCard key={product._id} title={product.prodName} price={product.price} description={product.brand} image={product.image}/>
         )
         )
       }    
