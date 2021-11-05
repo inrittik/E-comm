@@ -1,14 +1,17 @@
-.cardBorder{
-    border-radius : 15px;
-    box-shadow: 4px 4px 4px #888888;
+*{
+    margin: 0;
+}
+.productCardBorder{
+    max-width: auto;
     text-align: center;
     margin: 5vh 5vw;
-    transition: transform 0.2s;
+    transition: transform 0.1s;
+    background-color: white;
 }
-.cardBorder:hover{
-    transform: scale(1.08, 1.08);
+.productCardBorder:hover{
+    transform: scale(1.05, 1.05);
 }
-.cardSection{
+.productCardSection{
     display : flex;
     flex-wrap: wrap;
     justify-content: space-around;

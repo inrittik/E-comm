@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./NavBarOffCanvas.css";
 import SearchIcon from "@material-ui/icons/Search";
@@ -43,7 +42,7 @@ function NavBarOffCanvas() {
 
         <Link to='/CartPage'>
           <div className="header__optionBasket">
-            <ShoppingBasketIcon />
+            <ShoppingBasketIcon style={{fill: "white"}}/>
           </div>
         </Link>
         

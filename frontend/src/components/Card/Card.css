@@ -1,17 +1,14 @@
 .cardBorder{
-    border-radius : 15px;
-    box-shadow: 10px 8px 8px #888888;
     text-align: center;
-    
-    transition: transform 0.2s;
-}
-
-.cardBorder:hover{
-    transform: scale(1.08, 1.08);
+    background-color: white;
+    padding: 10px 0;
+    margin: 20px 0;
+    z-index: 10;
 }
 
 .cardSection{
     display : flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #f3f4f4;
 }

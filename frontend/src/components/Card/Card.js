@@ -1,15 +1,6 @@
 import React from 'react'
 import './Card.css'
-// const cardBorder={
-//     borderRadius : '15px',
-//     boxShadow: '10px 8px 8px #888888',
-//     hover: {
-//         transform: 'scale(1.1)',
-//     },
 
-//     textAlign: 'center',
-//     margin: '6px',
-// }
 export default function Card(props) {
     return (
         <div className="cardSection">

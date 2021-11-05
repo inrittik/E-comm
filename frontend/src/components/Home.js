@@ -4,10 +4,19 @@ import Corousel from './Carousel/Carousel';
 import Card from './Card/Card'
 import cardData from './Card/CardDetails';
 import ProductCard from './products/productCard';
-// import productDetails from './products/productsDetails';
 import Footer from './Footer';
 
+const cardSection = {
+  justifyContent: "space-around",
+  backgroundColor: "#f3f4f4",
+  zIndex: "1",
+  marginTop: "-100px"
+}
 
+const productCardSection = {
+  justifyContent: "space-around",
+  backgroundColor: "#f3f4f4",
+}
 export default function Home() {
   const [products, setProducts] = useState([]);
   useEffect(()=>{
@@ -18,10 +27,10 @@ export default function Home() {
   }, [])
     return (
       <>
-      <div className="container mt-1" style={{maxWidth: "90vw"}}>
+      <div>
       <Corousel/>
     </div>
-    <div className="cardSection" style={{justifyContent: "space-around"}}>
+    <div className="cardSection" style={cardSection}>
       {
         cardData.cards.map((card)=>(
           <Card key={card._id} title={card.heading} description={card.description}/>
@@ -29,7 +38,7 @@ export default function Home() {
         )
       }
     </div>
-    <div className="cardSection" style={{justifyContent: "space-around"}}>
+    <div className="cardSection" style={productCardSection}>
       {
         products.map((product)=>(
           <ProductCard key={product._id} title={product.prodName} price={product.price} description={product.brand} image={product.image}/>

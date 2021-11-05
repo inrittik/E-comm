@@ -11,6 +11,7 @@ import {
   Route,
 } from "react-router-dom";
 
+
 function App() {
   return (
     <>
@@ -22,11 +23,11 @@ function App() {
           </Route>
           <Route path="/CartPage">
             <NavBarOffCanvas/>
-            <CartPage/>
+            <CartPage />
           </Route>
           <Route path="/">
             <NavBarOffCanvas/>
-            <Home/>
+            <Home />
           </Route>
           
         </Switch>          
