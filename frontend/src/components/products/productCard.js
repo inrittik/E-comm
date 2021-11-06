@@ -5,12 +5,16 @@ export default function Card(props) {
     return (
         <div className="productCardSection">
             <div className="productCardBorder">
-            <h4 className="card-title pt-2" >{props.title}</h4>
             <a href="/" className="btn"><img src={props.image} className="card-img-top w-75" alt={props.image_alt}/></a>
-            <div className="card-body">
-                <h4 style={{textAlign: 'center'}}>Rs. {props.price}</h4>
-                <p className="card-text">{props.description}</p>
-            </div>
+                <div className="card-body">
+                    <p className="brand">{props.description}</p>
+                    <a href="/"><p className="card-title" >{props.title}</p></a>
+                    <p className="product-rating">
+                        
+                    </p>
+                </div>
+                <h6 style={{textAlign: 'center'}}>
+                    <sup>&#8377;</sup> {props.price}</h6>
             </div>
         </div>
     )

@@ -1,14 +1,25 @@
+*{
+    margin: 0;
+}
 .cardBorder{
     text-align: center;
     background-color: white;
     padding: 10px 0;
-    margin: 20px 0;
-    z-index: 10;
+    margin: 0;
+    border-radius: 5px;
 }
 
 .cardSection{
+    z-index: 10;
     display : flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
-    background-color: #f3f4f4;
+    background-color: #f3f4f400;
+}
+.card-text{
+    text-decoration: none;
+    color: black;
+}
+.card-text:hover{
+    color : rgb(189, 103, 5)
 }

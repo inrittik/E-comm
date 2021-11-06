@@ -8,14 +8,15 @@ import Footer from './Footer';
 
 const cardSection = {
   justifyContent: "space-around",
-  backgroundColor: "#f3f4f4",
-  zIndex: "1",
-  marginTop: "-100px"
+  backgroundColor: "#f3f4f4dc",
+  margin: "0 50px"
 }
 
 const productCardSection = {
   justifyContent: "space-around",
   backgroundColor: "#f3f4f4",
+  flexWrap: "wrap",
+  margin: "0 50px"
 }
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -41,7 +42,7 @@ export default function Home() {
     <div className="cardSection" style={productCardSection}>
       {
         products.map((product)=>(
-          <ProductCard key={product._id} title={product.prodName} price={product.price} description={product.brand} image={product.image}/>
+          <ProductCard key={product._id} title={product.prodName} price={product.price} description={product.brand} image={product.image} rating = {product.ratings}/>
         )
         )
       }    
